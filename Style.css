@@ -12,7 +12,7 @@ h5[name ="Teks_Login_ke_dalam_akun"]{
     display: block;
     margin-left: 450px;
 }
-input[name="email_login"]{
+input[type="text"],input[type="password"]{
     width: 779px;
     height: 101px;
     border-radius: 32px;
@@ -22,26 +22,13 @@ input[name="email_login"]{
     display: block;
     margin: auto;
 }
-input[name="email_login"]::placeholder{
+input::placeholder{
     color: #b7b7b7;
     font-style: Arial;
     font-size: 48px;
 }
 input[name="password_login"]{
-    width: 779px;
-    height: 101px;
-    border-radius: 32px;
-    border: 5px solid #b7b7b7;
-    padding-left:100px;
-    font-size: 48px;
-    display: block;
-    margin: auto;
     margin-top: 30px;
-}
-input[name="password_login"]::placeholder{
-    color: #b7b7b7;
-    font-style: Arial;
-    font-size: 48px;
 }
 button[name="login"]{ 
     border: none;
@@ -93,4 +80,105 @@ span[name="tidak_punya_akun"]{
     display: block;
     margin-top: 20px;
     margin-left: 450px;
+}
+
+/* REGISTRASI */
+h1[name ="daftar_akun_title"]{
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Mukta', sans-serif;
+    color: #898989;
+    display: block;
+    margin-left: 660px;
+}
+input[name="nama"]{
+    height: 55px;
+    border-radius: 15px;
+    margin-top: 12px;
+    font-size: 25px;
+    padding-left: 21px;
+}
+input[name="nama"]::placeholder{
+    font-size: 25px;
+}
+input[name="email"]{
+    height: 55px;
+    border-radius: 15px;
+    margin-top: 12px;
+    font-size: 25px;
+    padding-left: 21px;
+}
+input[name="email"]::placeholder{
+    font-size: 25px;
+}
+input[name="kota"]{
+    height: 55px;
+    border-radius: 15px;
+    margin-top: 12px;
+    font-size: 25px;
+    padding-left: 21px;
+}
+input[name="kota"]::placeholder{
+    font-size: 25px;
+}
+label[nama="label_regis"]{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5b5b5b;
+    margin-left: 270px;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+select{
+    border: 1px solid #b7b7b7;
+    border-radius: 8px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #5b5b5b;
+}
+select[name="tanggal"]{
+    margin-left: 260px;
+}
+input[type="radio"]{
+    margin: 20px;
+    width: 22px;
+    height: 22px;
+}
+label[name="label_radio"]{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #5b5b5b;
+}
+input[id="lakilaki"]{
+    margin-left: 260px;
+}
+p[name="paragraf_regis"]{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #6d6d6d;
+    display: block;
+    margin-left: 260px;
+    margin-right: 230px;
+}
+button[name="signup"]{ 
+    border: none;
+    width: 310px;
+    height: 64px;
+    font-family: 'Mukta', sans-serif; 
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 11px;
+    background-color: #2D3E50;
+    display: block;
+    margin: auto;
+}
+a[name="alredy_have_an_account"]{
+    color: #1877f2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }

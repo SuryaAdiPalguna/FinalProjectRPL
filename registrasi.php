@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "teman_belajar");
+$conn = mysqli_connect("localhost", "root", "125125", "teman_belajar");
 if (isset($_POST["signup"])) {
     $nama = $_POST["nama"];
     $email = $_POST["email"];
@@ -32,8 +32,8 @@ if (isset($_POST["signup"])) {
 <body>
 <form method="post">
     <header>
-        <img src="logo.jpg" alt="Logo" width="100">
-        <h1>Daftar Akun</h1>
+        <img name="login_logo"src="logo.jpg" alt="Logo" width="100">
+        <h1 name ="daftar_akun_title">Daftar Akun</h1>
     </header>
     <?php if (isset($error)) { ?>
     <div class="container">
@@ -43,44 +43,45 @@ if (isset($_POST["signup"])) {
     <div class="container">
         <input type="text" name="nama" id="nama" placeholder="Nama panggilan atau nama">
         <input type="text" name="email" id="email" placeholder="Mobile number or email address">
-        <label for="">Tempat tinggal?</label>
+        <label nama="label_regis" for="">Tempat tinggal?</label>
         <input type="text" name="kota" id="kota" placeholder="Kota">
-        <label for="">Tanggal lahir?</label>
+        <label nama="label_regis" for="">Tanggal lahir?</label><br>
         <select name="tanggal" id="tanggal">
             <?php
-            for ($i = 1; $i < 31; $i++) {
+            for ($i = 1; $i <= 31; $i++) {
                 echo "<option value='$i'>$i</option>";
             }
             ?>
         </select>
         <select name="bulan" id="bulan">
             <?php
-            for ($i = 1; $i < 12; $i++) {
+            for ($i = 1; $i <= 12; $i++) {
                 echo "<option value='".date("F", mktime(0, 0, 0, $i))."'>".date("F", mktime(0, 0, 0, $i))."</option>";
             }
             ?>
         </select>
         <select name="tahun" id="tahun">
             <?php
-            for ($i = 1900; $i < 2020; $i++) {
+            for ($i = 1900; $i <= 2022; $i++) {
                 echo "<option value='$i'>$i</option>";
             }
             ?>
-        </select>
-        <label for="jeniskelamin">Jenis kelamin?</label>
+        </select><br>
+        <label nama="label_regis" for="jeniskelamin">Jenis kelamin?</label><br>
         <input type="radio" name="jeniskelamin" id="lakilaki" value="Laki-Laki">
-        <label for="lakilaki">Laki-Laki</label>
+        <label name="label_radio" for="lakilaki">Laki-Laki</label>
         <input type="radio" name="jeniskelamin" id="perempuan" value="Perempuan">
-        <label for="perempuan">Perempuan</label>
+        <label name="label_radio" for="perempuan">Perempuan</label>
     </div>
     <div class="container">
-        <p>People who use our service may have uploaded your contact information to Facebook. Learn more.</p>
-        <p>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+        <p name="paragraf_regis">People who use our service may have uploaded your contact information to Facebook. Learn more.</p>
+        <p name="paragraf_regis">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
     </div>
     <div class="container">
         <button type="submit" name="signup" id="signup">Sign up</button>
-        <span><a href="login.php">Already have an account?</a></span>
+        <span><a name="alredy_have_an_account" href="login.php">Already have an account?</a></span>
     </div>
+    <link rel="stylesheet" href="Style.css">
 </form>
 </body>
 </html>
