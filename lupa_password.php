@@ -26,7 +26,7 @@ if (isset($_POST["kirim"])) {
 <body>
 <form method="post">
     <div class="container">
-        <img src="logo.jpg" alt="Logo">
+        <img src="logo.jpg" alt="Logo" width="100">
         <h5>Lupa Password</h5>
     </div>
     <div class="container">
