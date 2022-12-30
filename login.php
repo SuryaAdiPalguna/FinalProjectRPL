@@ -27,7 +27,7 @@ if (isset($_POST["login"])) {
 <body>
 <form method="post">
     <div class="container">
-        <img src="logo.png" alt="Logo">
+        <img src="logo.jpg" alt="Logo" width="100">
         <h5>Login ke dalam akunmu</h5>
     </div>
     <?php if (isset($error)) { ?>
