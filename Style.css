@@ -17,7 +17,7 @@ input[type="text"],input[type="password"]{
     height: 101px;
     border-radius: 32px;
     border: 5px solid #b7b7b7;
-    padding-left:100px;
+    padding-left:50px;
     font-size: 48px;
     display: block;
     margin: auto;
@@ -180,5 +180,57 @@ a[name="alredy_have_an_account"]{
     display: block;
     margin-top: 20px;
     margin-bottom: 20px;
+}
 
+/*Lupa Password*/
+@font-face {
+    font-family: 'Mukta';
+    src: url('/fonts/mukta-regular.ttf') format('truetype');
+  }
+h5[name="lupa_pass_title"]{
+    font-family: 'Mukta', sans-serif;
+    font-size: 40px;
+    color: #898989;
+    font-weight: bold;
+    text-align: center;   
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/roboto-regular.ttf') format('truetype');
+  }
+p[name="silahkan_masukan_email"]{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #898989;
+    text-align: center;
+}
+button[name="kirim"]{
+    background-color: #2D3E50;
+    border: none;
+    width: 194px;
+    height: 98px;
+    border-radius: 23px;
+    font-family:'Mukta', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 32px;
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+}
+a[name="back_login"]{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+/*Reset Password*/
+input[name="konfirmasi"]{
+    margin-top: 20px;
+}
+p[name="error"]{
+    margin-left: 265px;
+    color: red;
 }

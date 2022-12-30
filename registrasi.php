@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect("localhost", "root", "125125", "teman_belajar");
+$conn = mysqli_connect("localhost", "root", "", "teman_belajar");
 if (isset($_POST["signup"])) {
     $nama = $_POST["nama"];
     $email = $_POST["email"];
