@@ -1,0 +1,96 @@
+/* LOGIN */
+img[name = "login_logo"]{
+    display: block;
+    margin: auto;
+}
+
+h5[name ="Teks_Login_ke_dalam_akun"]{
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Mukta', sans-serif;
+    color: #898989;
+    display: block;
+    margin-left: 450px;
+}
+input[name="email_login"]{
+    width: 779px;
+    height: 101px;
+    border-radius: 32px;
+    border: 5px solid #b7b7b7;
+    padding-left:100px;
+    font-size: 48px;
+    display: block;
+    margin: auto;
+}
+input[name="email_login"]::placeholder{
+    color: #b7b7b7;
+    font-style: Arial;
+    font-size: 48px;
+}
+input[name="password_login"]{
+    width: 779px;
+    height: 101px;
+    border-radius: 32px;
+    border: 5px solid #b7b7b7;
+    padding-left:100px;
+    font-size: 48px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+input[name="password_login"]::placeholder{
+    color: #b7b7b7;
+    font-style: Arial;
+    font-size: 48px;
+}
+button[name="login"]{ 
+    border: none;
+    width: 194px;
+    height: 98px;
+    font-family: 'Mukta', sans-serif; 
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 32px;
+    background-color: #2D3E50;
+    margin-top: 20px;
+    margin-left: 260px;
+}
+button[name="login"]:hover{
+    background-color: #32485e;
+}
+a[name="forgot_password"]{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #2D3E50;
+    margin-left: 310px;
+}
+#OR_line{
+    display: flex;
+    flex-direction: row;
+    size: 2px;
+    color: #b7b7b7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#OR_line:before, #OR_line:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid;
+    margin: auto;
+}
+#OR_line:before {
+    margin-right: 10px;
+    margin-left: 250px;
+}
+#OR_line:after {
+    margin-left: 10px;
+    margin-right: 250px;
+}
+span[name="tidak_punya_akun"]{
+    color: #b7b7b7;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-top: 20px;
+    margin-left: 450px;
+}

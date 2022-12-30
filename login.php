@@ -27,8 +27,8 @@ if (isset($_POST["login"])) {
 <body>
 <form method="post">
     <div class="container">
-        <img src="logo.jpg" alt="Logo" width="100">
-        <h5>Login ke dalam akunmu</h5>
+        <img src="logo.jpg" alt="Logo" width="150px" height="150px" name="login_logo">
+        <h5 name ="Teks_Login_ke_dalam_akun">Login ke dalam akunmu</h5>
     </div>
     <?php if (isset($error)) { ?>
     <div class="container">
@@ -36,18 +36,19 @@ if (isset($_POST["login"])) {
     </div>
     <?php } ?>
     <div class="container">
-        <input type="text" name="email" id="email" placeholder="Email" required>
-        <input type="password" name="password" id="password" placeholder="Password" required>
+        <input type="text" name="email_login" id="email" placeholder="Email" required>
+        <input type="password" name="password_login" id="password" placeholder="Password" required>
     </div>
     <div class="container">
         <button type="submit" name="login" id="login">Log in</button>
-        <span><a href="lupa_password.php">Forgot password?</a></span>
+        <span><a href="lupa_password.php" name="forgot_password">Forgot password?</a></span>
     </div>
     <div class="container">
-        <p>or</p>
-        <span>Tidak punya akun? <a href="registrasi.php">Buat akun</a></span>
+        <h1 id="OR_line">OR</h1>
+        <span name ="tidak_punya_akun">Tidak punya akun? <a href="registrasi.php">Buat akun</a></span>
     </div>
 </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="Style.css">
 </body>
 </html>
