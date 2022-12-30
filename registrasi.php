@@ -32,7 +32,7 @@ if (isset($_POST["signup"])) {
 <body>
 <form method="post">
     <header>
-        <img src="logo.jpg" alt="Logo">
+        <img src="logo.jpg" alt="Logo" width="100">
         <h1>Daftar Akun</h1>
     </header>
     <?php if (isset($error)) { ?>
