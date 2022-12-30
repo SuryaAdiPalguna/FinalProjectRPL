@@ -192,8 +192,7 @@ h5[name="lupa_pass_title"]{
     font-size: 40px;
     color: #898989;
     font-weight: bold;
-    text-align: center;
-    
+    text-align: center;   
 }
 @font-face {
     font-family: 'Roboto';
@@ -204,9 +203,6 @@ p[name="silahkan_masukan_email"]{
     font-size: 20px;
     color: #898989;
     text-align: center;
-}
-p[name="email_salah"]{
-
 }
 button[name="kirim"]{
     background-color: #2D3E50;
@@ -229,4 +225,12 @@ a[name="back_login"]{
     margin: auto;
     margin-top: 20px;
     text-align: center;
+}
+/*Reset Password*/
+input[name="konfirmasi"]{
+    margin-top: 20px;
+}
+p[name="error"]{
+    margin-left: 265px;
+    color: red;
 }
