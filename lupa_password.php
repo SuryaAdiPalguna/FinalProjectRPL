@@ -26,7 +26,7 @@ if (isset($_POST["kirim"])) {
 <body>
 <form method="post">
     <div class="container">
-        <img src="logo.png" alt="Logo">
+        <img src="logo.jpg" alt="Logo">
         <h5>Lupa Password</h5>
     </div>
     <div class="container">
@@ -42,7 +42,7 @@ if (isset($_POST["kirim"])) {
     </div>
     <div class="container">
         <button type="submit" name="kirim" id="kirim">Kirim</button>
-        <span><a href="login.html">Back to Login</a></span>
+        <span><a href="login.php">Back to Login</a></span>
     </div>
 </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
